@@ -29,4 +29,4 @@ USER appuser
 EXPOSE 8000
 
 # Run the command to start Uvicorn
-CMD ["fastapi", "run", "src/main.py", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["fastapi", "run", "src/main.py", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers"]
